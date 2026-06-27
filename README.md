@@ -7,4 +7,4 @@ Public landing pages for the World Fan iOS/Android app.
 - **Support:** https://cesarin3134.github.io/world-fan-site/support.html
 
 App source: private repo.
-Contact: cesar.andavisa@gmail.com
+Contact: cesarin3134@hotmail.com
