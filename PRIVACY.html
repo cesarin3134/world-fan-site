@@ -29,47 +29,55 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 2026-06-27</p>
+  <p class="updated">Last updated: 2026-06-28</p>
 
   <h2>Summary</h2>
-  <p>World Fan does not collect, transmit, or store any personal data on a server. All app data stays on your device.</p>
+  <p>World Fan does not collect, transmit, or store any personal data on a server. All app data stays on your device. There are no accounts, no advertising, no third-party analytics, and no tracking SDKs. Applies to both the iOS and Android editions.</p>
 
   <h2>What we store locally</h2>
-  <p>The following are stored only in your device's local storage (MMKV):</p>
+  <p>The following are stored only in your device's local storage (MMKV on iOS and Android):</p>
   <ul>
-    <li>Your favorite teams</li>
+    <li>Your favorite teams and matches</li>
     <li>Your match reminders</li>
-    <li>Your match predictions and points</li>
+    <li>Your match predictions and earned points</li>
     <li>Your chosen language</li>
-    <li>Your display name (optional, if you set one)</li>
+    <li>Your display name (optional, only if you set one)</li>
+    <li>Cached images and roster data, to reduce network use</li>
   </ul>
-  <p>Uninstalling the app removes all of this.</p>
+  <p>Uninstalling the app removes all of this. You can also clear it via the system Settings → app storage.</p>
 
-  <h2>What we fetch</h2>
-  <p>The app fetches public data from third-party sources to display content:</p>
+  <h2>What we fetch from the network (read-only)</h2>
+  <p>To show live information, the app issues read-only HTTPS requests to public, publisher-owned endpoints. These services receive your IP address and standard HTTPS headers, the same as any web browser visiting the same page. We pass no personal identifier of any kind.</p>
   <ul>
     <li><strong>worldcup26.ir</strong> — match schedule, scores, scorers, group standings</li>
-    <li><strong>openfootball/worldcup.json</strong> (GitHub) — team squads</li>
-    <li><strong>Wikipedia REST API</strong> — optional player photos</li>
-    <li><strong>DiceBear (api.dicebear.com)</strong> — initials avatars when no photo is available</li>
-    <li><strong>Google News RSS via api.rss2json.com</strong> — tournament news</li>
+    <li><strong>openfootball/worldcup.json</strong> (raw.githubusercontent.com) — team squads and authoritative goal data</li>
+    <li><strong>News RSS feeds via api.rss2json.com</strong> — tournament news from BBC Sport, The Guardian, Marca, Mundo Deportivo, La Gazzetta dello Sport</li>
+    <li><strong>flagcdn.com</strong> — team flags</li>
+    <li><strong>upload.wikimedia.org</strong> — tournament logo</li>
+    <li><strong>Article publisher pages</strong> — only when an article ships without a thumbnail; read once to extract the og:image meta tag, then cached locally</li>
   </ul>
-  <p>These services may log standard request metadata (IP, timestamp). We have no control over their policies.</p>
+  <p>Each publisher has its own privacy policy that governs the request they receive. We have no control over those policies.</p>
 
-  <h2>Notifications</h2>
-  <p>The app may schedule local notifications for match reminders if you grant permission. Notifications are scheduled and fired locally; no push server is involved.</p>
-
-  <h2>Calendar</h2>
-  <p>If you ever opt into adding a match to your device calendar, the app uses the standard iOS / Android calendar APIs after requesting permission.</p>
+  <h2>Permissions</h2>
+  <p>The app requests the following permissions only when you opt into the feature that uses them. You can decline without losing core functionality:</p>
+  <ul>
+    <li><strong>Notifications</strong> — only to fire match-kickoff reminders you explicitly schedule. Scheduled locally; no push server is involved.</li>
+    <li><strong>Calendar</strong> — only when you add a match to your device calendar. Uses the system calendar API after explicit permission.</li>
+    <li><strong>Network access</strong> — required to load live scores, schedule, news, and roster data.</li>
+  </ul>
+  <p>We do not request location, contacts, microphone, camera, photos, or any other sensitive permission.</p>
 
   <h2>Accounts</h2>
   <p>There are no accounts. There is no sign-up. There is no login.</p>
 
-  <h2>Tracking &amp; analytics</h2>
-  <p>None.</p>
+  <h2>Tracking, analytics, and ads</h2>
+  <p>None. No advertising SDKs, no behavioural analytics, no telemetry.</p>
 
   <h2>Children</h2>
-  <p>The app is suitable for all ages and does not collect data from any user, including children.</p>
+  <p>The app is rated 4+ on iOS and Everyone on Google Play. It does not collect data from any user, including children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we ever change how the app handles data, we will update this page and bump the &quot;Last updated&quot; date above. The current version is always the source of truth.</p>
 
   <h2>Contact</h2>
   <p>For questions or concerns: <a href="mailto:cesar.andavisa@gmail.com">cesar.andavisa@gmail.com</a></p>
